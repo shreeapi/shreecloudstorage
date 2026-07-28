@@ -2,90 +2,101 @@
 
 # ☁️ ShreeCloudStorage
 
-### Unlimited Cloud Storage powered by your own Telegram Account
+### Unlimited Cloud Storage Powered by Your Own Telegram Account
 
 Upload • Stream • Share • Store
 
 <p align="center">
-
-<img src="https://img.shields.io/github/stars/shreeapi/telecloud-storage?style=for-the-badge">
-
-<img src="https://img.shields.io/github/license/shreeapi/telecloud-storage?style=for-the-badge">
-
-<img src="https://img.shields.io/badge/Telegram-MTProto-2CA5E0?style=for-the-badge&logo=telegram">
-
-<img src="https://img.shields.io/badge/Node.js-Express-green?style=for-the-badge&logo=node.js">
-
-<img src="https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react">
-
+  <a href="https://shreecloudstudio.vercel.app/">
+    <img src="https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=vercel">
+  </a>
+  <a href="https://github.com/shreeapi/telecloud-storage">
+    <img src="https://img.shields.io/github/stars/shreeapi/telecloud-storage?style=for-the-badge">
+  </a>
+  <a href="https://github.com/shreeapi/telecloud-storage/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/shreeapi/telecloud-storage?style=for-the-badge">
+  </a>
+  <img src="https://img.shields.io/badge/Telegram-MTProto-2CA5E0?style=for-the-badge&logo=telegram">
+  <img src="https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js">
+  <img src="https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react">
 </p>
 
-Store your files directly inside **Telegram Saved Messages** and access them from anywhere.
+**Store your files directly inside Telegram Saved Messages.**
 
-**No storage limits. No monthly subscriptions. No hidden fees.**
-
----
-
-### 🌐 Website
-
-https://your-domain.com
-
-### 📖 Documentation
-
-https://your-domain.com/docs
-
-### 💬 Telegram
-
-https://t.me/shreeapi
-
-https://t.me/nepalimomoswala
+**Unlimited Storage • Video Streaming • Public Sharing • Modern Dashboard**
 
 </div>
 
 ---
 
-# Overview
+# 📚 Table of Contents
 
-ShreeCloudStorage transforms your personal Telegram account into a free cloud storage platform.
-
-Instead of saving files on our servers, every uploaded file is stored directly inside **your own Telegram Saved Messages** using Telegram's official MTProto protocol.
-
-This allows:
-
-- Unlimited storage*
-- Large file uploads
-- Video streaming
-- Audio streaming
-- Public sharing
-- Private storage
-
-without maintaining expensive storage servers.
-
-> Files belong to you—not us.
+- [Overview](#-overview)
+- [Why ShreeCloudStorage?](#-why-shreecloudstorage)
+- [Features](#-features)
+- [Architecture](#-architecture)
+- [Tech Stack](#-tech-stack)
+- [Quick Start](#-quick-start)
+- [Environment Variables](#-environment-variables)
+- [Login Flow](#-login-flow)
+- [QR Login](#-qr-login)
+- [Folder Management](#-folder-management)
+- [Streaming](#-streaming)
+- [Sharing](#-sharing)
+- [Admin Panel](#-admin-panel)
+- [Developer API](#-developer-api)
+- [Security](#-security)
+- [Roadmap](#-roadmap)
+- [Links](#-links)
+- [Credits](#-credits)
 
 ---
 
-# Why ShreeCloudStorage?
+# ☁️ Overview
 
-✅ Unlimited Storage
+ShreeCloudStorage transforms your **Telegram Saved Messages** into your own personal cloud storage.
+
+Instead of uploading files to expensive storage servers, every uploaded file is securely stored inside **your own Telegram account** using Telegram's official **MTProto protocol**.
+
+Because of this, you get:
+
+- 🚀 Unlimited Storage*
+- 🎬 Video Streaming
+- 🎵 Audio Streaming
+- 📁 Folder Management
+- 🔗 Public Sharing
+- 🔒 Private Files
+- ⚡ Fast Uploads
+
+without paying monthly cloud storage fees.
+
+> **Your files belong to your Telegram account—not our servers.**
+
+---
+
+# 🚀 Why ShreeCloudStorage?
+
+### ☁️ Unlimited Storage
 
 No storage subscriptions.
 
 No monthly pricing.
 
+No upgrade plans.
+
 Your Telegram account becomes your cloud drive.
 
 ---
 
-✅ Your Data
+### 🔒 Your Data
 
-Files remain inside **your own Telegram account**.
+Files stay inside your own Telegram account.
 
 We never permanently store uploaded files.
 
 ---
 
-✅ Stream Everything
+### 🎬 Stream Everything
 
 Supports
 
@@ -97,77 +108,103 @@ Supports
 - MP3
 - FLAC
 
-with instant seeking.
+with instant seeking using HTTP Range Requests.
 
 ---
 
-✅ Fast Uploads
+### ⚡ Fast Uploads
 
 - Drag & Drop
-- Multiple Files
 - Folder Upload
-- Resume
-- Live Speed
+- Multiple Uploads
+- Background Uploads
+- Live Upload Speed
 - ETA
-- Background Upload
+- Upload Queue
 
 ---
 
-✅ Developer Friendly
+### 👨‍💻 Developer Friendly
 
-Generate your own API Key.
+Every user can generate their own API Key.
 
-Integrate with:
+Perfect for
 
 - Websites
-- Mobile Apps
 - Bots
-- Scripts
+- Mobile Apps
 - Desktop Apps
+- Scripts
 
 ---
 
-# Architecture
+# ✨ Features
 
-```
-Browser
+- 📱 Telegram Login
+- 🔐 MTProto Authentication
+- 📂 Folder Support
+- 📤 Drag & Drop Upload
+- 📁 Folder Upload
+- 🎬 Video Streaming
+- 🎵 Audio Streaming
+- 📷 Image Preview
+- 📄 PDF Preview
+- ❤️ Favorite Files
+- 📌 Pin Files
+- 🔍 Search Files
+- 🗑 Trash & Restore
+- 📊 Storage Statistics
+- 🔗 Public Share Links
+- 🔒 Private Links
+- ⚡ Live Upload Progress
+- 🌙 Dark Mode
+- ☀️ Light Mode
+- 📱 Mobile Responsive
+- 💻 Modern Dashboard
 
-│
+---
 
-▼
+# 🏗 Architecture
 
-React Frontend
+```text
+            Browser
 
-│
+               │
 
-REST API
+               ▼
 
-│
+       React Frontend
 
-▼
+               │
 
-Express Backend
+          REST API
 
-│
+               │
 
-GramJS
+               ▼
 
-│
+      Express Backend
 
-Telegram MTProto
+               │
 
-│
+            GramJS
 
-Saved Messages
+               │
 
-│
+      Telegram MTProto
 
-Files
+               │
+
+      Saved Messages
+
+               │
+
+             Files
 ```
 
 ---
 
-# Tech Stack
+# ⚙ Tech Stack
 
 ## Frontend
 
@@ -175,6 +212,7 @@ Files
 - Vite
 - CSS Variables
 - React Router
+- Axios
 
 ---
 
@@ -194,11 +232,11 @@ Lightweight JSON Database
 Stores only
 
 - Users
-- Metadata
+- File Metadata
 - Folders
 - Share Links
 
-Files are **never stored** permanently on the server.
+Actual files remain inside Telegram.
 
 ---
 
@@ -206,13 +244,23 @@ Files are **never stored** permanently on the server.
 
 - Helmet
 - Rate Limiting
-- Session Encryption
 - Secure Cookies
+- Session Encryption
 - HTTP Security Headers
 
 ---
 
-# Quick Start
+# 🚀 Quick Start
+
+## Clone Repository
+
+```bash
+git clone https://github.com/shreeapi/telecloud-storage.git
+
+cd telecloud-storage
+```
+
+---
 
 ## Backend
 
@@ -224,6 +272,12 @@ cp .env.example .env
 npm install
 
 npm start
+```
+
+Backend
+
+```
+http://localhost:4000
 ```
 
 ---
@@ -238,14 +292,6 @@ npm install
 npm run dev
 ```
 
----
-
-Backend
-
-```
-http://localhost:4000
-```
-
 Frontend
 
 ```
@@ -254,7 +300,7 @@ http://localhost:5173
 
 ---
 
-# Environment
+# 🔑 Environment Variables
 
 ```env
 TG_API_ID=
@@ -274,22 +320,26 @@ ADMIN_PASSWORD=
 
 ---
 
-# Login Flow
+# 📱 Login Flow
 
-```
+```text
 Phone Number
 
 ↓
 
-Telegram OTP
+Telegram sends OTP
 
 ↓
 
-2FA Password
+Enter OTP
 
 ↓
 
-Encrypted Session
+(Optional) 2FA Password
+
+↓
+
+Encrypted Telegram Session
 
 ↓
 
@@ -300,16 +350,17 @@ No bots.
 
 No Telegram Login Widget.
 
-Uses real Telegram authentication.
+Uses Telegram's official MTProto authentication.
 
 ---
 
-# QR Login
+# 📷 QR Login
 
-Prefer QR?
+Don't want to type a code?
 
 Open Telegram
 
+```
 Settings
 
 ↓
@@ -327,51 +378,51 @@ Scan QR
 ↓
 
 Done
+```
 
-Exactly like Telegram Desktop.
-
----
-
-# Folder Support
-
-- Create folders
-- Upload inside folders
-- Folder navigation
-- Folder upload
-- Automatic hierarchy
+Works exactly like Telegram Desktop.
 
 ---
 
-# Rename Files
+# 📂 Folder Management
+
+- Create Folders
+- Rename Folders
+- Folder Upload
+- Navigate Between Folders
+- Automatic Folder Hierarchy
+
+---
+
+# ✏ Rename Files
 
 Renaming updates
 
-✔ Local Database
+- Local Database
+- Telegram Message Caption
 
-✔ Telegram Message Caption
-
-Everything stays synchronized.
+Everything remains synchronized.
 
 ---
 
-# Upload Manager
+# ⬆ Upload Manager
 
 Supports
 
 - Multiple Uploads
 - Queue
-- Live Progress
+- Upload Progress
 - Upload Speed
 - ETA
+- Background Uploads
 - Cancel Upload
-- Background Upload
 - Floating Upload Window
 
-Navigate anywhere while uploads continue.
+Continue browsing while uploads keep running.
 
 ---
 
-# Streaming
+# 🎬 Streaming
 
 Supports HTTP Range Requests.
 
@@ -382,31 +433,28 @@ Perfect for
 - Music
 - Podcasts
 
-Instant seek.
-
-No full download required.
+Instant seeking without downloading the entire file.
 
 ---
 
-# Sharing
+# 🔗 Sharing
 
-Private Files
+Generate
 
-Public Links
+- Public Links
+- Private Files
 
-Password Links
-
-Revoke Anytime
-
-Random Tokens
+Share format
 
 ```
 /public/<token>
 ```
 
+Public links can be revoked anytime.
+
 ---
 
-# Admin Panel
+# 🛠 Admin Panel
 
 ```
 /admin
@@ -418,110 +466,153 @@ Includes
 - Storage Usage
 - File Count
 - Last Active
-- Monitoring
+- Monitoring Dashboard
 
-Admin **cannot view Telegram sessions**.
+Telegram session strings are never displayed.
 
 ---
 
-# Developer API
+# 🔌 Developer API
 
-Generate your own API key.
+Generate your own API Key.
 
+### Upload
+
+```http
+POST /api/v1/upload
 ```
-POST   /api/v1/upload
 
-GET    /api/v1/files
+### List Files
 
-GET    /api/v1/files/:id
+```http
+GET /api/v1/files
+```
 
-GET    /api/v1/files/:id/stream
+### File Details
 
+```http
+GET /api/v1/files/:id
+```
+
+### Stream File
+
+```http
+GET /api/v1/files/:id/stream
+```
+
+### Delete File
+
+```http
 DELETE /api/v1/files/:id
 ```
 
 Authentication
 
+```http
+X-API-Key: tc_xxxxxxxxxxxxxx
 ```
-X-API-Key
 
 or
 
-Authorization: Bearer
+```http
+Authorization: Bearer tc_xxxxxxxxxxxxxx
 ```
 
 ---
 
-# Security
+# 🔒 Security
 
-The encrypted Telegram session is equivalent to a logged-in Telegram account.
+Every Telegram session is encrypted before storage.
 
-Always:
+Please remember:
 
-- Protect SESSION_ENCRYPT_KEY
-- Never commit .env
-- Enable HTTPS
-- Backup your secrets
-- Add FLOOD_WAIT retries
-
----
-
-# Important
-
-Files larger than **20MB** are temporarily written to a short-lived file during upload because of Telegram library limitations.
-
-The temporary file is automatically deleted after upload.
-
-No permanent copy is kept.
+- Never expose `SESSION_ENCRYPT_KEY`
+- Never commit `.env`
+- Always use HTTPS
+- Protect your API credentials
+- Implement FLOOD_WAIT retries for production
+- Enable backups for your metadata database
 
 ---
 
-# Roadmap
+# ⚠ Important Notice
 
-- Desktop App
-- Android App
-- iOS App
-- WebDAV
-- S3 API
-- PostgreSQL
-- Redis
-- Worker Queue
-- CDN
-- AI Search
-- OCR
-- File Versioning
+Files larger than **20 MB** may be temporarily written to a short-lived file during upload because of Telegram library limitations.
+
+The temporary file is automatically deleted immediately after upload completes.
+
+No permanent copy is stored on the server.
 
 ---
 
-# Contributing
+# 🛣 Roadmap
 
-Pull Requests are welcome.
-
-Feel free to open Issues or submit improvements.
+- [ ] PostgreSQL Support
+- [ ] Redis Cache
+- [ ] Multi Device Login
+- [ ] Desktop Client
+- [ ] Android App
+- [ ] iOS App
+- [ ] WebDAV
+- [ ] S3 Compatible API
+- [ ] OCR Search
+- [ ] AI Auto Tagging
+- [ ] File Versioning
+- [ ] Background Workers
+- [ ] Upload Resume
+- [ ] Faster Streaming
 
 ---
 
-# Credits
+# 🤝 Contributing
 
-### Powered by ShreeAPI
+Contributions are always welcome.
 
-### Designed by AnshAPI
+Feel free to:
 
-GitHub
+- Open an Issue
+- Submit a Pull Request
+- Suggest New Features
+- Report Bugs
 
+---
+
+# 🔗 Links
+
+| Platform | Link |
+|----------|------|
+| 🌐 Website | **[ShreeCloudStorage](https://shreecloudstudio.vercel.app/)** |
+| 💻 GitHub | **[telecloud-storage](https://github.com/shreeapi/telecloud-storage)** |
+| 📢 Telegram Channel | **[@shreeapi](https://t.me/shreeapi)** |
+| 👨‍💻 Developer | **[@nepalimomoswala](https://t.me/nepalimomoswala)** |
+
+---
+
+# ❤️ Credits
+
+<div align="center">
+
+## Powered by **ShreeAPI**
+
+## Designed by **AnshAPI**
+
+<br>
+
+🌐 **Website**  
+https://shreecloudstudio.vercel.app/
+
+💻 **GitHub**  
 https://github.com/shreeapi/telecloud-storage
 
-Telegram
-
+📢 **Telegram**  
 https://t.me/shreeapi
 
+👨‍💻 **Developer**  
 https://t.me/nepalimomoswala
 
 ---
 
-<div align="center">
-
-## ⭐ Star this repository if you found it useful!
+### ⭐ If you like this project, please Star the repository!
 
 Made with ❤️ by **AnshAPI**
 

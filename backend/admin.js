@@ -10,8 +10,8 @@ const router = express.Router();
 // panel works out of the box — but PLEASE move these to your real .env and
 // change the password before deploying anywhere public. Hardcoded/default
 // admin credentials in source are a real risk if this repo is ever public.
-const ADMIN_ID = process.env.ADMIN_ID || "anshapi@ansh";
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "@Ansh1437";
+const ADMIN_ID = process.env.ADMIN_ID || "YOUR";
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "YOUR";
 
 // Admin login was previously unlimited — a real brute-force gap for a
 // password protecting this much. Same shape as the site's other login limiters.
